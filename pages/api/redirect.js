@@ -1,6 +1,6 @@
 export default async (req, res) => {
   const body = JSON.stringify({ code: req.query.code });
-  const answer = await fetch(`${process.env.BACKEND_URL}/auth/login`, {
+  const answer = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/auth/login`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -8,5 +8,5 @@ export default async (req, res) => {
     body,
   });
   console.log('answer', await answer.json());
-  res.redirect('/');
+  res.redirect('/danke');
 };
