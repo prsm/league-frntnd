@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 export default function Home() {
   const discordLoginHandler = () => {
-    window.location.assign('http://localhost:3000/auth/discord');
+    window.location.assign(`${process.env.BACKEND_URL}/auth/discord`);
   };
 
   return (
