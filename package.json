@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3001",
-    "build": "next build",
-    "start": "next start"
+    "dev": "yarn tailwind:build && next dev -p 3001",
+    "build": "yarn tailwind:build && next build",
+    "start": "next start",
+    "tailwind:build": "npx tailwindcss build styles/tailwind.css -o styles/styles.css"
   },
   "dependencies": {
     "next": "9.5.3",
