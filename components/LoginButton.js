@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import DiscordLogo from '../public/discord.svg';
 
 export default function LoginButton() {
@@ -7,10 +8,15 @@ export default function LoginButton() {
 
   return (
     <div className="block">
-      <button className="flex flex-row justify-center bg-discord-blue p-2 rounded w-full" onClick={discordLoginHandler}>
-        <DiscordLogo className=" w-8 h-8 flex-none" />
+      <motion.button
+        className="flex flex-row justify-center bg-discord-blue w-full p-2 rounded  focus:outline-none"
+        onClick={discordLoginHandler}
+        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 0.97 }}
+      >
+        <DiscordLogo className=" w-8 h-8" />
         <span className="ml-2 text-white font-bold text-lg">Log in with Discord</span>
-      </button>
+      </motion.button>
     </div>
   );
 }
