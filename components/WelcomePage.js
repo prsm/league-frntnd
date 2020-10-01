@@ -45,7 +45,7 @@ export default function WelcomePage() {
           </motion.a>
         </div>
       </div>
-      <div className="bg-prsm-dark-700 rounded-md shadow-lg mt-4 mb-6 py-4 px-4 mx-4 lg:p-16">
+      <div className="bg-prsm-dark-700 rounded-md shadow-lg mt-4 mb-6 py-4 px-4 mx-4 lg:p-8">
         <h2 className="text-white font-bold text-2xl lg:text-3xl mb-4 ">
           CoD Olympics<span className=" text-prsm-red-500 text-xs align-top lg:text-base">Next event</span>
         </h2>
@@ -56,7 +56,9 @@ export default function WelcomePage() {
           <div className="lg:ml-4">
             <h3 className="text-white font-bold text-xl mb-4">What are the Call of Duty Olympics?</h3>
             <p className="text-white font-medium text-lg">
-              Over the next two LAN-Events there will be different gamemodes in different games. There will be more information on this in the following days.
+              Over the next two LAN-Events there will be different gamemodes in different games.
+              <br />
+              There will be more information on this in the following days.
               <br />
               <span className="text-prsm-red-500">Join our Discord server to stay updated</span>
             </p>
