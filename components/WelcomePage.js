@@ -7,7 +7,7 @@ import LoginButton from './LoginButton';
 export default function WelcomePage() {
   return (
     <>
-      <div className="w-full bg-prsm-dark-700 overflow-hidden relative">
+      <div className="w-full bg-prsm-dark-700 overflow-hidden relative  shadow-lg">
         <div className=" mt-8 mb-2 mx-4 px-4 py-4 lg:px-32 xl:px-64 lg:py-20">
           <FontLogo className="text-white fill-current w-32 lg:w-48 m-auto " />
           <h1 className="text-white font-bold text-4xl mt-16 lg:text-6xl lg:mb-8">
@@ -84,7 +84,7 @@ export default function WelcomePage() {
           </div>
         </div>
       </div>
-      <div className="static left-0 bottom-0  w-full bg-prsm-dark-700 flex flex-col lg:flex-row items-center py-4 px-8">
+      <div className="static left-0 bottom-0  w-full bg-prsm-dark-700 flex flex-col lg:flex-row items-center py-4 px-8 shadow-lg">
         <p className="text-white font-bold text-base order-2 lg:order-1">© PR1SM.GG</p>
         <Logo className="fill-current text-white w-12 h-12 m-auto order-1 lg:order-2" />
         <p className="text-white font-bold text-base order-3">Made by quest1onmark#1337</p>
