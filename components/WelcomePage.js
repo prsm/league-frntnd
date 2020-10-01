@@ -9,7 +9,7 @@ export default function WelcomePage() {
     <>
       <div className="w-full bg-prsm-dark-700 overflow-hidden relative">
         <div className=" mt-8 mb-2 mx-4 px-4 py-4 lg:px-32 xl:px-64 lg:py-20">
-          <FontLogo className="text-white fill-current w-32 lg:w-48 float-right " />
+          <FontLogo className="text-white fill-current w-32 lg:w-48 m-auto " />
           <h1 className="text-white font-bold text-4xl mt-16 lg:text-6xl lg:mb-8">
             LEAGUE<span className=" text-prsm-red-500 text-sm lg:text-base align-top">BETA</span>
           </h1>
@@ -17,9 +17,6 @@ export default function WelcomePage() {
             Welcome to PR1SM League, a custom made league system for and by PR1SM. This beta version was created for the Call of Duty Olympics.
             <br />
             You can log in with Discord. The data we'll be able to access are basic profile informations, your e-mail and your avatar.
-            <br />
-            <br />
-            Also, make sure to join our Discord Server. There you'll be able to find more informations about current matches or tournaments.
           </p>
         </div>
 
@@ -63,7 +60,7 @@ export default function WelcomePage() {
               <span className="text-prsm-red-500">Join our Discord server to stay updated</span>
             </p>
             <h3 className="text-white font-bold text-xl my-4">Olympic disciplines:</h3>
-            <ul className="list-disc list-inside mb-4">
+            <ul className="list-disc list-inside mb-4 ml-6">
               <li className="text-prsm-red-600">
                 <span className="text-white font-medium text-lg">LAN2K20</span>
                 <ul className="list-disc list-inside">
@@ -87,8 +84,10 @@ export default function WelcomePage() {
           </div>
         </div>
       </div>
-      <div className="static left-0 bottom-0  w-full bg-prsm-dark-700 py-4">
-        <Logo className="fill-current text-white w-12 h-12 m-auto" />
+      <div className="static left-0 bottom-0  w-full bg-prsm-dark-700 flex flex-col lg:flex-row items-center py-4 px-8">
+        <p className="text-white font-bold text-base order-2 lg:order-1">© PR1SM.GG</p>
+        <Logo className="fill-current text-white w-12 h-12 m-auto order-1 lg:order-2" />
+        <p className="text-white font-bold text-base order-3">Made by quest1onmark#1337</p>
       </div>
     </>
   );
